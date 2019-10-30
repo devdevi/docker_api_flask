@@ -1,7 +1,7 @@
-venv/
-.env
+api_flask/venv/
+api_flask/.env
 
-*.pyc
-__pycache__/
+api_flask/*.pyc
+api_flask/__pycache__/
 
-instance/
+api_flask/instance/
