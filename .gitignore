@@ -2,6 +2,6 @@ api_flask/venv/
 api_flask/.env
 
 api_flask/*.pyc
-api_flask/__pycache__/
+__pycache__/
 
 api_flask/instance/
