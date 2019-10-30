@@ -1,10 +1,6 @@
 import os
 
-# You need to replace the next values with the appropriate values for your configuration
-
 basedir = os.path.abspath(os.path.dirname(__file__))
-elk_url = "http://bch-elk-01.cci-entel.cl:9200/_search?"
+farmanet_url = "https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=7"
+minsal_url = "https://midastest.minsal.cl/farmacias/maps/index.php/utilidades/maps_obtener_comunas_por_regiones"
 headers = {"content-type": "application/json"}
-# SQLALCHEMY_ECHO = False
-# SQLALCHEMY_TRACK_MODIFICATIONS = True
-# SQLALCHEMY_DATABASE_URI = "postgresql://username:password@localhost/database_name"

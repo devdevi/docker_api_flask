@@ -12,16 +12,14 @@ Run the following commands to get started running this app locally:
 
 Then visit `http://localhost:5000` to play with the app.
 
-## Running Docker 
+## Running Docker
 
 ```
-    sudo docker build -t flask-bch:latest .
-    sudo docker run -d -p 5000:5000 flask-bch
     sudo docker container rm <container id>
-    sudo docker build -t flaskbch:latest .
-    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 flaskbch  
-    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 flaskbch sh
-    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 --network=host flaskbch
+    sudo docker build -t flaskapi:latest .
+    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 flaskapi
+    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 flaskapi sh
+    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 --network=host flaskapi
 ```
 ## Licensing
 
