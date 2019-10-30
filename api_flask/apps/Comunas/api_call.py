@@ -3,7 +3,7 @@ from api_flask.apps.Comunas.models import Comuna
 # Api url
 from api_flask.config import minsal_url
 
-from api_flask.apps.firestore_services import get_comunas
+# from api_flask.apps.firestore_services import get_comunas
 import requests
 import simplejson as json
 import datetime
@@ -18,8 +18,7 @@ multipart_data = MultipartEncoder(
 
 headers = {"content-type": "multipart/form-data"}
 
-comunas = get_comunas()
-
+comunas = []
 
 def getData():
     try:
@@ -44,5 +43,5 @@ def setComuna(elm):
     return comuna.__dict__
 
 def getComunas():
-    # getData()
+    getData()
     return comunas

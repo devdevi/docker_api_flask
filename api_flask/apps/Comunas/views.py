@@ -17,11 +17,11 @@ class Comunas(Resource):
 api.add_resource(Comunas, '/comunas',)
 
 
-class Comuna(Resource):
-    def get(self):
-        comunas = api_call.getComunas()
-        return comunas
-api.add_resource(Comunas, '/comuna/<str:name>', endpoint='comuna_name')
+# class Comuna(Resource):
+#     def get(self):
+#         comunas = api_call.getComunas()
+#         return comunas
+# api.add_resource(Comunas, '/comuna/<str:name>', endpoint='comuna_name')
 
 
 

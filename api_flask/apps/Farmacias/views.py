@@ -12,3 +12,9 @@ class Farmacias(Resource):
         return farmacias
 
 api.add_resource(Farmacias, '/farmacias')
+
+class Query(Resource):
+    def get(self, comuna_name, farmacia_name):
+        result = api_call.filterComuna(comuna_name, farmacia_name)
+        return jsonify(result)
+api.add_resource(Query, '/comuna/<comuna_name>/farmacia/<farmacia_name>')  # Route_3
