@@ -17,6 +17,12 @@ Then visit `http://localhost:5000` to play with the app.
     sudo docker build -t flaskapi:latest .
     sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 --network=host flaskapi
 ```
+
+###
+![Inicio](api_flask/apps/images/init.png)
+![Farmacias](api_flask/apps/images/farmacias.png)
+![Comunas](api_flask/apps/images/comunas.png)
+![Filtro](api_flask/apps/images/filtro.png)
 ## Licensing
 
 This example is open-sourced software licensed under the
