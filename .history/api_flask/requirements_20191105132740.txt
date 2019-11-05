@@ -1,7 +1,0 @@
-Flask
-Flask-API
-Flask-RESTful
-requests
-simplejson
-requests-toolbelt
-gunicorn
