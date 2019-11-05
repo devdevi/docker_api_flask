@@ -10,11 +10,11 @@ COPY api_flask/ .
 
 RUN pip3 --no-cache-dir install -r requirements.txt
 
-# ENV FLASK_APP=app.py
-# ENV FLASK_ENV=development
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
 
-# ENTRYPOINT ["python"]
-# CMD ["app.py"]
+ENTRYPOINT ["python"]
+CMD ["app.py"]
 
 # EXPOSE 5000
 
@@ -23,5 +23,3 @@ RUN pip3 --no-cache-dir install -r requirements.txt
 # EXPOSE 80
 
 # CMD [ "flask", "run", "-h", "80", "-p", "80" ]
-
-CMD flask run -h 0.0.0.0 -p $PORT --reload
