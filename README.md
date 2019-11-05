@@ -2,12 +2,15 @@
 
 This is an API Flask
 
-## Running Locally
+## Deploy Heroku
 
 Run the following commands to get started running this app locally:
 ```RUN:
-    sudo docker build -t flaskapi:latest .
-    sudo docker run --rm -it -v $(pwd)/api_flask:/api_flask -p 5000:5000 --network=host flaskapi
+    heroku create apifarmacias
+    heroku container:push web --app apifaramcias
+    heroku container:release web --app apifaramcias
+    heroku open
+    heroku logs --tail
 ```
 
 Then visit `http://localhost:5000` to play with the app.
