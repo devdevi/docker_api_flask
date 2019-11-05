@@ -13,6 +13,13 @@ RUN pip3 --no-cache-dir install -r requirements.txt
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=development
 
-EXPOSE 80
+ENTRYPOINT ["python"]
+CMD ["app.py"]
 
-CMD [ "flask", "run", "-h", "80", "-p", "80" ]
+# EXPOSE 5000
+
+# CMD [ "flask", "run", "-h", "127.0.0.1", "-p", "5000" ]
+
+# EXPOSE 80
+
+# CMD [ "flask", "run", "-h", "80", "-p", "80" ]

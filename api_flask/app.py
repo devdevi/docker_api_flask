@@ -5,6 +5,7 @@ from api_flask.apps.Hello import Hello
 api_bp_hello = Blueprint('api', __name__)
 api = Api(api_bp_hello)
 
+
 # Route
 api.add_resource(Hello, '/')
 
